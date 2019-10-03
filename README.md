@@ -1,2 +1,7 @@
-# js training
-js training from js basic to ECMAScript 6
+# JavaScript is not Java
+
+**¿De qué sirve ganar el mundo entero si se pierde la vida?:**
+
+> Marcos 8:36
+
+
