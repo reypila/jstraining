@@ -5,7 +5,9 @@ import PropTypes from 'prop-types';
 import {
     RAIN,
     WINDY
-} from './../constants/weathers';
+} from './../../../constants/weathers';
+
+import './style.css'
 
 const icons = {
     // [CLOUD]: "cloud",
@@ -15,7 +17,7 @@ const icons = {
     [WINDY]: "windy"
 };
 const WeatherData = () => (
-    <div>
+    <div className='weatherDataCont'>
         <WeatherTemperature
             temperature={20}
             weatherState={RAIN}>
