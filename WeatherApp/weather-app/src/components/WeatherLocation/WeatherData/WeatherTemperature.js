@@ -42,7 +42,7 @@ const WeatherTemperature = ({ temperature, weatherState }) => (
         {
             getWeatherIcon(weatherState)
         }
-        <span>{`${temperature} C.`}</span>
+        <span>{`${temperature}`}</span>
         <span>{` C .`}</span>
 
     </div>
