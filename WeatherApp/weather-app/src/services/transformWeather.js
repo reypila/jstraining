@@ -1,7 +1,7 @@
 import convert from 'convert-units';
 
 const getTemp = kelvin => {
-    return convert(kelvin).from('K').to('C').toFixed(2);
+    return parseInt(convert(kelvin).from('K').to('C').toFixed(2));
 }
 const getWeatherState = weather_data => {
     return 'SUN'

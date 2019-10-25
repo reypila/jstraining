@@ -30,7 +30,9 @@ class WeatherLocation extends Component {
         };
     }
 
-
+    componentDidMount(){
+        this.handleUpdateClick();
+    }
 
     handleUpdateClick = () => {
 
@@ -42,8 +44,8 @@ class WeatherLocation extends Component {
             this.setState({
                 data: newWeather
             })
-            //.log(data);
-            debugger;
+            // log(data);
+            //  debugger;
         });
 
         this.setState(({
