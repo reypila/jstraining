@@ -3,11 +3,6 @@ import PropTypes from 'prop-types'
 import WeatherExtraInfo from './WeatherExtraInfo';
 import WeatherTemperature from './WeatherTemperature';
 
-import {
-    RAIN,
-    WINDY
-} from './../../../constants/weathers';
-
 import './style.css'
 
 const WeatherData = ({ data }) => {
