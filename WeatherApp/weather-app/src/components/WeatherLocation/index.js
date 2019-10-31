@@ -4,33 +4,21 @@ import WeatherData from './WeatherData'
 import './styles.css';
 import transformWeather from './../../services/transformWeather';
 import { api_weather } from './../../constants/api_weather';
-
-const data = {
-    temperature: 2001,
-    weatherState: 'rain',
-    humidity: 2001,
-    wind: '2001 m/s',
-}
-
-const dataB = {
-    temperature: 4001,
-    weatherState: 'snow',
-    humidity: 4001,
-    wind: '4001 m/s',
-}
+import CircularProgress from '@material-ui/core/CircularProgress';
+import PropTypes from 'prop-types';
 
 class WeatherLocation extends Component {
 
-    constructor() {
-        super();
-
+    constructor(props) {
+        super(props);
+        const { city } = props
         this.state = {
-            city: '',
+            city,
             data: null,
         };
     }
 
-    componentDidMount(){
+    componentDidMount() {
         this.handleUpdateClick();
     }
 
@@ -44,16 +32,7 @@ class WeatherLocation extends Component {
             this.setState({
                 data: newWeather
             })
-            // log(data);
-            //  debugger;
         });
-
-        this.setState(({
-            city: 'Barcelona',
-            data: data
-        }), () => {
-            //console.log('this set');
-        })
     }
 
     render() {
@@ -64,13 +43,16 @@ class WeatherLocation extends Component {
                 {
                     data ?
                         <WeatherData data={data}></WeatherData> :
-                        "Cargando..."
+                        <CircularProgress size={55}></CircularProgress>
                 }
                 <button onClick={this.handleUpdateClick}>Update</button>
             </div>
         );
     }
 
+}
+WeatherLocation.protoTypes = {
+    city: PropTypes.string.isRequired
 }
 
 export default WeatherLocation;
