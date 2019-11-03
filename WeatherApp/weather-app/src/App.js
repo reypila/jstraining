@@ -2,7 +2,7 @@ import React from 'react';
 // start
 import WeatherLocation from './components/WeatherLocation'
 // end
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 function App() {

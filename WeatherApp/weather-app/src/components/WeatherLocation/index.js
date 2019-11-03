@@ -3,9 +3,9 @@ import Location from './Location'
 import WeatherData from './WeatherData'
 import './styles.css';
 import transformWeather from './../../services/transformWeather';
-import { getUrlWeatherByCity } from './../../services/getUrlWeatherByCity'; 
 import CircularProgress from '@material-ui/core/CircularProgress';
 import PropTypes from 'prop-types';
+import getUrlWeatherByCity from './../../services/getUrlWeatherByCity';
 
 class WeatherLocation extends Component {
 
@@ -23,11 +23,18 @@ class WeatherLocation extends Component {
     }
 
     handleUpdateClick = () => {
+        const  api_weather = getUrlWeatherByCity(this.state.city);
+        debugger;
+        console.dir(api_weather);
+        fetch(api_weather, {
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }
 
-        fetch(api_weather).then(resolve => {
+        }).then(resolve => {
             return resolve.json();
         }).then(data => {
-            console.dir(data);
             const newWeather = transformWeather(data);
             this.setState({
                 data: newWeather
