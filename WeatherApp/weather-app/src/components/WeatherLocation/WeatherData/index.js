@@ -8,7 +8,6 @@ import './style.css'
 const WeatherData = ({ data }) => {
     const { temperature, weatherState, humidity, wind } = data;
 
-    console.dir(data);
 
     return (<div className='weatherDataCont'>
         <WeatherTemperature

@@ -23,16 +23,8 @@ class WeatherLocation extends Component {
     }
 
     handleUpdateClick = () => {
-        const  api_weather = getUrlWeatherByCity(this.state.city);
-        debugger;
-        console.dir(api_weather);
-        fetch(api_weather, {
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            }
-
-        }).then(resolve => {
+        const api_weather = getUrlWeatherByCity(this.state.city);
+        fetch(api_weather).then(resolve => {
             return resolve.json();
         }).then(data => {
             const newWeather = transformWeather(data);
