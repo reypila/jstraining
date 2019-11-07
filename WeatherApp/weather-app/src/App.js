@@ -1,14 +1,11 @@
 import React from 'react';
-// start
-import WeatherLocation from './components/WeatherLocation'
-// end
-// import logo from './logo.svg';
+import LocationList from './components/LocationList';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <WeatherLocation city='Mexico,mx'/>
+      <LocationList></LocationList>
     </div>
   );
 }
