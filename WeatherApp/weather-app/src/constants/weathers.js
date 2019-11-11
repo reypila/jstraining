@@ -14,6 +14,11 @@
 
 
 module.exports = {
-    WINDY : "windy",
+    CLOUD: 'cloud',
+    SUN: 'sun',
+    RAIN: 'rain',
+    SNOW: 'snow',
     RAIN : "rain",
+    THUNDERSTORE :  'thunderstore',
+    DRIZZLE: 'drizzle'
 }
