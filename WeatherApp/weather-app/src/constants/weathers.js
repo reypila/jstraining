@@ -14,6 +14,10 @@
 
 
 module.exports = {
-    WINDY : "windy",
+    CLOUD: "cloud",
+    SUN: "sun",
     RAIN : "rain",
+    SNOW : "snow",
+    THUNDER : "day-thunderstore",
+    DRIZZLEE : "day-showers",
 }
