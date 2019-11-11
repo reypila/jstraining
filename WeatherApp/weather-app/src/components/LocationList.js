@@ -4,7 +4,7 @@ import WeatherLocation from './WeatherLocation/index';
 const LocationList = () => (
     <div>
         <WeatherLocation city='Buenos Aires,ar'></WeatherLocation>
-        <WeatherLocation city='Bogota,col'></WeatherLocation>
+        <WeatherLocation city='washington,us'></WeatherLocation>
         <WeatherLocation city='Mexico,mx'></WeatherLocation>
     </div>
 );

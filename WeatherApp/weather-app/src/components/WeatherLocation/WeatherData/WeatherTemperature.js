@@ -5,15 +5,6 @@ import * as Weather from './../../../constants/weathers';
 
 import PropTypes from 'prop-types';
 
-// const icons = {
-//     cloud: "cloud",
-//     cloudy: "cloudy",
-//     sun: "sun",
-//     rain: "rain",
-//     snow: "snow",
-//     windy: "windy"
-// };
-
 import {
     CLOUD,
     SUN,
@@ -24,8 +15,6 @@ import {
 } from './../../../constants/weathers';
 
 const icons = {
-    [CLOUD]: "cloud",
-    [SUN]: "day-sunny",
     [RAIN]: "rain",
     [SNOW]: "snow",
     [THUNDER]: "day-thunderstore",
