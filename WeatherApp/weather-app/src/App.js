@@ -6,10 +6,9 @@ const cities = [
   'Buenos Aires,ar',
   'Washington,us',
   'Bogota,col',
-  'Ciudad de Mexico,mx',
+  'Mexico city,mx',
   'Madrid,es',
   'Lima,pe'
-
 ];
 
 function App() {

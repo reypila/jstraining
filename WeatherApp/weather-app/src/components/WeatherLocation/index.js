@@ -27,8 +27,10 @@ class WeatherLocation extends Component {
         fetch(api_weather).then(resolve => {
             return resolve.json();
         }).then(data => {
+           // debugger;
             const newWeather = transformWeather(data);
             this.setState({
+                city: this.state.city,
                 data: newWeather
             })
         });
