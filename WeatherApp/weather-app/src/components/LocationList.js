@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const strToComponents = (cities) => {
     return cities.map(city => <WeatherLocation key={city} city={city} />)
-    
+    // Another way
     // debugger;
     // let tmp = [];
     // for (let index = 0; index < cities.length; index++) {
