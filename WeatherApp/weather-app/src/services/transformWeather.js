@@ -2,13 +2,13 @@ import convert from 'convert-units';
 import * as Weathers from './../constants/weathers';
 
 const getTemp = kelvin => {
-    return parseInt(convert(kelvin).from('K').to('C').toFixed(2));
+    return parseInt(convert(kelvin).from('K').to('C').toFixed(0));
 }
 const getWeatherState = weather => {
     const { id } = weather;
 
     if (id < 300) {
-        return Weathers.THUNDERSTORE;
+        return Weathers.THUNDER;
     } else if (id < 400) {
         return Weathers.DRIZZLE;
     } else if (id < 600) {

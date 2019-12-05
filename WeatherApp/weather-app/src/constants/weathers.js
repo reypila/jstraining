@@ -18,6 +18,6 @@ module.exports = {
     SUN: "sun",
     RAIN : "rain",
     SNOW : "snow",
-    THUNDER : "day-thunderstore",
+    THUNDER : "day-thunderstorm",
     DRIZZLEE : "day-showers",
 }

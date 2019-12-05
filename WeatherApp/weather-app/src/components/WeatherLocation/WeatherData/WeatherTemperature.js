@@ -17,7 +17,7 @@ import {
 const icons = {
     [RAIN]: "rain",
     [SNOW]: "snow",
-    [THUNDER]: "day-thunderstore",
+    [THUNDER]: "day-thunderstorm",
     [DRIZZLEE]: "day-showers",
 
 };
