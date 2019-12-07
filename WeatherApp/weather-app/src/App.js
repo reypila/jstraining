@@ -20,7 +20,7 @@ const cities = [
 
 class App extends Component {
 
-  handleSelection = city => {
+  handleSelectionLocation = city => {
     console.log(`handleSelectionLocation ${city}`);
   }
 
@@ -67,7 +67,9 @@ class App extends Component {
           </Col>
           <Col xs={12} md={6}>
             <Paper elevation={4}>
-              <div className='detail'></div>
+              <div className='detail'>
+                <ForecastExtended></ForecastExtended>
+              </div>
             </Paper>
           </Col>
         </Row>
