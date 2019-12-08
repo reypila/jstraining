@@ -20,11 +20,17 @@ const cities = [
 
 class App extends Component {
 
+  constructor() {
+    super();
+    this.state = { city: 'Nueva Ciudad' };
+  }
   handleSelectionLocation = city => {
+    this.setState({ city });
     console.log(`handleSelectionLocation ${city}`);
   }
 
   render() {
+    const { city } = this.state;
     return (
       // <MuiThemeProvider>
       //   <Grid>
@@ -50,6 +56,9 @@ class App extends Component {
 
       <Grid>
         <Row>
+          {/* <Col xs={12}>
+            <AppBar title='Weather App'  position='sticky'/>
+          </Col> */}
           <AppBar position='sticky'>
             <Toolbar>
               <Typography variant='h4' color='inherit'>
@@ -68,7 +77,7 @@ class App extends Component {
           <Col xs={12} md={6}>
             <Paper elevation={4}>
               <div className='detail'>
-                <ForecastExtended></ForecastExtended>
+                <ForecastExtended city={city}></ForecastExtended>
               </div>
             </Paper>
           </Col>
